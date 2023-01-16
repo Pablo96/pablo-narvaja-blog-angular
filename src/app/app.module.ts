@@ -4,7 +4,6 @@ import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { IonicModule } from '@ionic/angular';
     BrowserModule,
     AppRoutingModule,
     AdminModule,
-    IonicModule.forRoot()
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
