@@ -1,0 +1,84 @@
+.container:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+.container input{
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+}
+
+.about-section-container {
+  list-style: none;
+}
+
+.about-section {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0  1rem 0;
+  padding: 5px 5px 5px 0;
+  background-color: #0005;
+  height: calc(15rem + 10px);
+}
+
+.about-section .img-viewer {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: 18rem;
+  padding: 5px;
+}
+
+.about-section .img-viewer ion-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  color: #FFFB;
+  mix-blend-mode: overlay;
+}
+
+.about-section .img-viewer img {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.about-section div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: calc(1.5rem + 10px);
+  margin: 0;
+}
+
+.about-section div *:first-child{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-section div ion-icon {
+  color: black;
+  width: inherit;
+  height: calc(1.5rem + 10px);
+  padding: 5px;
+}
+
+.about-section div input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 5px 5px 0 5px;
+}
+
+.about-section textarea {
+  height: 15rem;
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+}

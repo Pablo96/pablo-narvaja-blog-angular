@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
-ion-icon {
-  color: blue;
+:root {
+  --text-color: white;
+  --accent-color: #4187f6;
+  --hover-accent-color: #1b4994;
+  --background-color: #232c33;
+  --navigation-bg-color: #2b343b;
+  --navigation-hover-color: #161b1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.section-title{
+  margin: 0 0 1rem 0;
+}
+
+hr {
+  margin: 2rem 0 2rem 0;
 }

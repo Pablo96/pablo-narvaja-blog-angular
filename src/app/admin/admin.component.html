@@ -1,53 +1,55 @@
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
 <div class="navigation">
   <ul>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/dashboard">
         <span class="icon"><ion-icon name="bar-chart-sharp"></ion-icon></span>
-        <span class="list">Dashboard</span>
+        <span class="title">Dashboard</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/articles">
         <span class="icon"><ion-icon name="document-sharp"></ion-icon></span>
-        <span class="list">Articles</span>
+        <span class="title">Articles</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/tags">
         <span class="icon"><ion-icon name="pricetag-sharp"></ion-icon></span>
-        <span class="list">Tags</span>
+        <span class="title">Tags</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/resources">
         <span class="icon"><ion-icon name="file-tray-full-sharp"></ion-icon></span>
-        <span class="list">Resources</span>
+        <span class="title">Resources</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/page">
         <span class="icon"><ion-icon name="browsers-sharp"></ion-icon></span>
-        <span class="list">Page</span>
+        <span class="title">Page</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/users">
         <span class="icon"><ion-icon name="people-sharp"></ion-icon></span>
-        <span class="list">Users</span>
+        <span class="title">Users</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/profile">
         <span class="icon"><ion-icon name="person-sharp"></ion-icon></span>
-        <span class="list">Profile</span>
+        <span class="title">Profile</span>
       </a>
     </li>
-    <li>
-      <a href="#">
+    <li routerLinkActive="active">
+      <a routerLink="/admin/logout">
         <span class="icon"><ion-icon name="log-out-sharp"></ion-icon></span>
-        <span class="list">Logout</span>
+        <span class="title">Logout</span>
       </a>
     </li>
   </ul>
 </div>
-<router-outlet></router-outlet>
