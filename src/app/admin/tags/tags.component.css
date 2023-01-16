@@ -1,0 +1,121 @@
+ul {
+  list-style: none;
+  color: var(--text-color);
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: var(--navigation-bg-color);
+}
+
+ul li:hover {
+  background-color: var(--accent-color);
+}
+
+ul li ion-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+ul li:hover ion-icon {
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+
+ul li ion-icon:hover {
+  width: 2rem;
+  height: 2rem;
+  color: var(--text-color);
+}
+
+ul li *:first-child{
+  flex: 1;
+}
+
+ul li:first-child {
+  margin-top:0;
+}
+
+ul li:last-child {
+  margin-bottom:0;
+}
+
+.pag-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pag-menu * {
+  margin: 0 1rem 5px 1rem;
+}
+
+.pag-menu .page-number {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 5px 0 5px 0;
+  text-align: center;
+  width: 8rem;
+}
+
+.pag-menu .page-number * {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.pag-menu ion-icon {
+  height: 3rem;
+  width: 3rem;
+  color: var(--accent-color);
+}
+
+.pag-menu ion-icon:hover {
+  color: var(--hover-accent-color);
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: var(--hover-accent-color);} 
