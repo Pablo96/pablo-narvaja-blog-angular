@@ -1,0 +1,119 @@
+.user-view {
+  display: flex;
+}
+
+.user-view img{
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+  min-height: 128px;
+  max-height: 40vh;
+  min-width: 128px;
+  border: 2px solid var(--accent-color);
+}
+
+.user-view textarea {
+  min-height: 10em;
+  padding: 1rem;
+  min-width: fit-content;
+}
+
+.user-view .container {
+  margin: 1rem;
+}
+
+.user-view .container hr {
+  margin: 1rem 0 1rem 0;
+}
+
+.user-view button {
+  padding: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  color: var(--text-color);
+  background-color: rgb(190, 22, 22);
+}
+
+.user-view button:hover {
+  font-weight: bolder;
+  color: var(--text-color);
+  background-color: darkred;
+}
+
+.user-view .img-viewer {
+  position: relative;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  max-width: 25rem;
+}
+
+.user-view .img-viewer ion-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  color: #FFFB;
+  mix-blend-mode: overlay;
+}
+
+.user-view .img-viewer img {
+  height: 100%;
+  width: 100%;
+}
+
+.user-list {
+  list-style: none;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+  border: 1px black solid;
+}
+
+.user-list li:hover {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  border: 1px var(--accent-color) solid;
+}
+
+.user-list li:first-child {
+  display: flex;
+  margin: 0;
+}
+
+.user-list li:last-child {
+  display: flex;
+  margin: 0;
+}
+
+.user-list img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.user-list div {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.user-list ion-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+
+.user-list li:hover ion-icon {
+  color: black;
+}
+
+.user-list li:hover ion-icon:hover {
+  color: white;
+}
