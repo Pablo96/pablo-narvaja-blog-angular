@@ -9,6 +9,9 @@ import { ResourcesComponent } from './resources/resources.component';
 import { UsersComponent } from './users/users.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { DocumentsComponent } from './resources/documents/documents.component';
+import { ImagesComponent } from './resources/images/images.component';
+import { VideosComponent } from './resources/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { ArticlesComponent } from './articles/articles.component';
     ResourcesComponent,
     UsersComponent,
     ProfileComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    DocumentsComponent,
+    ImagesComponent,
+    VideosComponent
   ],
   imports: [
     CommonModule,
