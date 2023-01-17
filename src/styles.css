@@ -34,6 +34,11 @@ hr {
   padding: 1.5rem;
 }
 
+.resources-content-page {
+  padding: 1rem;
+  padding-right: 0;
+}
+
 .content {
   padding-left: calc(80px);
   min-height: 100vh;
