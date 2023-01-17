@@ -30,10 +30,12 @@ hr {
   margin: 2rem 0 2rem 0;
 }
 
+.admin-content-page {
+  padding: 1.5rem;
+}
+
 .content {
   padding-left: calc(80px);
-  padding-top: 1rem;
-  padding-right: 1rem;
   min-height: 100vh;
   background-color: whitesmoke;
 }
