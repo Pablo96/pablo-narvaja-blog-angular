@@ -29,7 +29,7 @@
   margin-right: 0;
 }
 
-.card .title {
+.card-title {
   color: white;
   text-align: center;
   text-overflow: clip;
@@ -37,7 +37,7 @@
   font-size: 2rem;
 }
 
-.card .content {
+.card-content {
   color: white;
   text-align: center;
   text-overflow: clip;

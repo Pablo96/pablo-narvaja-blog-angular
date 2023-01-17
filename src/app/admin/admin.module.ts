@@ -10,8 +10,6 @@ import { UsersComponent } from './users/users.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ArticlesComponent } from './articles/articles.component';
 
-
-
 @NgModule({
   declarations: [
     AdminComponent,
