@@ -2,6 +2,23 @@
   <h1 class="section-title"> Resources </h1>
   <hr>
   <div class="nav-container">
+    <div class="content" style="min-height: auto;">
+      <div class="resource-preview">
+        <img src="assets/img/profile_pic.png">
+        <div class="resource-preview-content">
+          <div class="header">
+            <p class="extension-wrapper">[</p>
+            <p class="extension">png</p>
+            <p class="extension-wrapper">]</p>
+            <h3> | Resource name</h3>
+          </div>
+          <div class="resource-preview-spec">
+            <div [innerHtml]="resource_info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-top: 0">
     <div class="content">
       <router-outlet></router-outlet>
     </div>

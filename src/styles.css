@@ -32,11 +32,11 @@ hr {
 
 .admin-content-page {
   padding: 1.5rem;
+  padding-right: 0;
 }
 
 .resources-content-page {
-  padding: 1rem;
-  padding-right: 0;
+  padding: 1rem 0 1rem 0;
 }
 
 .content {
@@ -169,3 +169,68 @@ hr {
   white-space: nowrap;
   text-transform: capitalize;
 }
+.resource-list {
+  list-style: none;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+}
+
+.resource-list .main-content {
+  list-style: none;
+  flex: 1;
+  padding: 1rem;
+}
+
+.resource-list .active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.resource-list .active .button {
+  color: var(--navigation-hover-color);
+}
+
+.resource-list .active .button:hover {
+  color: var(--text-color);
+}
+
+.resource-list li {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--navigation-bg-color);
+  margin: 0.5rem 0 0.5rem 0;
+  background-color: var(--navigation-hover-color);
+}
+
+.resource-list li:hover {
+  background-color: var(--hover-accent-color);
+}
+
+.resource-list li:first-child {
+  margin-top: 0;
+}
+
+.resource-list li:last-child {
+  margin-bottom: 0;
+}
+
+.resource-list li *:last-child {
+  margin-right: 0.5rem;
+}
+
+.resource-list li .separator {
+  border: 1px solid var(--navigation-bg-color);
+  height: 4.9rem;
+}
+
+.resource-list li:hover .separator {
+  border: 1px solid white;
+  height: 4.9rem;
+}
+
+.resource-list li ion-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 2px;
+}
+
