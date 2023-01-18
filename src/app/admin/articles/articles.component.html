@@ -12,7 +12,12 @@
     </div>
     <div class="html-editor">
       <label>Content</label>
-      <textarea placeholder="<h1>My article</h1>"></textarea>
+      <angular-editor
+        [config]="editorConfig"
+        [(ngModel)]="htmlContent"
+        required
+        #newContent>
+      </angular-editor>
     </div>
   </div>
 </div>

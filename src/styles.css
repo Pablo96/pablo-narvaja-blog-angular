@@ -63,6 +63,7 @@ hr {
 .admin-content-page {
   padding: 1.5rem 1.5rem 0 1.5rem;
   max-height: 100%;
+  position: relative;
 }
 
 .resources-content-page {
@@ -268,11 +269,5 @@ hr {
 
 .html-editor label {
   padding: 0.5rem;
-  padding-left: 0;  
-}
-
-.html-editor textarea {
-  padding: 0.5rem;
-  resize: vertical;
-  height: 100%;
+  padding-left: 0;
 }

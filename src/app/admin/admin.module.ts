@@ -12,6 +12,9 @@ import { ArticlesComponent } from './articles/articles.component';
 import { DocumentsComponent } from './resources/documents/documents.component';
 import { ImagesComponent } from './resources/images/images.component';
 import { VideosComponent } from './resources/videos/videos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,12 @@ import { VideosComponent } from './resources/videos/videos.component';
     VideosComponent
   ],
   imports: [
+    HttpClientModule,
     CommonModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    AngularEditorModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
