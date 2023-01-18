@@ -19,30 +19,55 @@ body {
   min-height: 100vh;
 }
 
-.section-title{
+.section-title {
   margin: 0 0 1rem 0;
   text-transform: capitalize;
   font-weight: bold;
   font-size: 2rem;
 }
 
+.input-label {
+  display: grid;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-label:first-child {
+  margin-top: 0;
+}
+
+.input-label:last-child{
+  margin-bottom: 0;
+}
+
+.input-label label {
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.input-label input {
+  padding: 0.5rem;
+}
+
 hr {
   margin: 2rem 0 2rem 0;
 }
 
+.content {
+  padding-left: 80px;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: whitesmoke;
+}
+
 .admin-content-page {
-  padding: 1.5rem;
-  padding-right: 0;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  max-height: 100%;
 }
 
 .resources-content-page {
-  padding: 1rem 0 1rem 0;
-}
-
-.content {
-  padding-left: calc(80px);
-  min-height: 100vh;
-  background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation {
@@ -169,10 +194,13 @@ hr {
   white-space: nowrap;
   text-transform: capitalize;
 }
+
 .resource-list {
   list-style: none;
-  margin-right: 0.5rem;
+  padding: 18px;
   color: var(--text-color);
+  height: 35rem;
+  overflow: scroll;
 }
 
 .resource-list .main-content {
@@ -234,3 +262,17 @@ hr {
   padding: 2px;
 }
 
+.html-editor {
+  display: grid;
+}
+
+.html-editor label {
+  padding: 0.5rem;
+  padding-left: 0;  
+}
+
+.html-editor textarea {
+  padding: 0.5rem;
+  resize: vertical;
+  height: 100%;
+}
