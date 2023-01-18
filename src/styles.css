@@ -71,6 +71,25 @@ hr {
   margin: 0;
 }
 
+.label-paragraf {
+  display: grid;
+}
+
+.label-paragraf label {
+  padding: 0.5rem;
+  padding-left: 0;
+  text-transform: capitalize;
+}
+
+.label-paragraf p {
+  padding: 0.4rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 500;
+  background-color: white;
+}
+
 .navigation {
   position: absolute;
   top: 0;
@@ -270,4 +289,30 @@ hr {
 .html-editor label {
   padding: 0.5rem;
   padding-left: 0;
+}
+
+.button {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--hover-accent-color);
+  padding: 5px;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: var(--hover-accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.button-red {
+  color: var(--text-color);
+  background-color: rgb(214, 0, 0);
+  border: 1px solid darkred;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.button-red:hover {
+  background-color: darkred;
+  border: 1px solid rgb(214, 0, 0);
 }

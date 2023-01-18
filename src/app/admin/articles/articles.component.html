@@ -1,23 +1,38 @@
 <div class="admin-content-page">
   <h1 class="section-title"> Articles </h1>
   <hr>
-  <div style="padding-right: 1rem;">
-    <div class="input-label">
-      <label>Title</label>
-      <input placeholder="My Article">
+  <div class="article-content-page">
+    <div>
+      <div class="input-label">
+        <label>Title</label>
+        <input placeholder="My Article">
+      </div>
+      <div class="input-label">
+        <label>Description</label>
+        <input placeholder="This article is about something">
+      </div>
+      <div class="html-editor">
+        <label>Content</label>
+        <angular-editor
+          [config]="editorConfig"
+          [(ngModel)]="htmlContent"
+          required
+          #newContent>
+        </angular-editor>
+      </div>
     </div>
-    <div class="input-label">
-      <label>Description</label>
-      <input placeholder="This article is about something">
-    </div>
-    <div class="html-editor">
-      <label>Content</label>
-      <angular-editor
-        [config]="editorConfig"
-        [(ngModel)]="htmlContent"
-        required
-        #newContent>
-      </angular-editor>
+    <div style="padding: 0.5rem; padding-right: 0; min-width: 15rem">
+      <div class="grid">
+        <button class="button">Publish</button>
+        <button class="button">Save</button>
+        <button class="button-red">Discard</button>
+        <button class="button-red">Delete</button>
+      </div>
+      <hr style="margin: 0.5rem 0 0.5rem 0;">
+      <div class="label-paragraf">
+        <label>Last publish date</label>
+        <p>11 Jan 2023</p>
+      </div>
     </div>
   </div>
 </div>

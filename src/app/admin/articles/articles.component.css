@@ -1,0 +1,22 @@
+.article-content-page {
+  display: flex;
+  justify-items: stretch;
+  justify-content: stretch;
+}
+
+.article-content-page *:first-child {
+  flex: 8;
+}
+
+.article-content-page *:last-child {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid *{
+  margin: 2px;
+}
