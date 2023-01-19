@@ -217,10 +217,13 @@ hr {
 
 .resource-list {
   list-style: none;
-  padding: 18px;
   color: var(--text-color);
   height: 35rem;
   overflow: scroll;
+}
+
+.resources-content-page .resource-list {
+  padding: 18px;
 }
 
 .resource-list .main-content {
@@ -233,6 +236,17 @@ hr {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
+
+.resource-list .button {
+  border: none;
+  background-color: transparent;
+}
+
+.resource-list .button:hover {
+  border: none;
+  background-color: transparent;
+}
+
 
 .resource-list .active .button {
   color: var(--navigation-hover-color);
@@ -274,6 +288,14 @@ hr {
 .resource-list li:hover .separator {
   border: 1px solid white;
   height: 4.9rem;
+}
+
+.resource-list li:hover .button {
+  color: var(--navigation-hover-color);
+}
+
+.resource-list li:hover .button:hover {
+  color: var(--text-color);
 }
 
 .resource-list li ion-icon {
