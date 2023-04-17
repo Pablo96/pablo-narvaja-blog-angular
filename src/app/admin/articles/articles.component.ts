@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
+import { ArticlePreview } from 'src/app/shared/article.model';
+import { ArticlesService } from '../articles.service';
 
 @Component({
   selector: 'app-articles',
@@ -52,5 +54,17 @@ export class ArticlesComponent {
       ['fontSize']
     ]
   };
-  htmlContent:string = "";
+  htmlContent: string = "";
+  articles: ArticlePreview[];
+
+  constructor(private articlesService: ArticlesService) {}
+
+  ngAfterContentInit(): void {
+    this.getArticles();
+  }
+
+  getArticles(): void {
+    this.articlesService.getArticlesPreviews()
+      .subscribe(articles => this.articles = articles);
+  }
 }

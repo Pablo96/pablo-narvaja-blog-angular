@@ -1,6 +1,6 @@
 import { Tag } from "src/app/shared/basics.model";
 
-export class Article {
+export class ArticlePreview {
   slug: string;
   title: string;
   description: string;
@@ -8,5 +8,8 @@ export class Article {
   author_email: string;
   thumbnail_url: string;
   tag: Tag[];
+}
+
+export class Article extends ArticlePreview{
   content_html: string;
 }

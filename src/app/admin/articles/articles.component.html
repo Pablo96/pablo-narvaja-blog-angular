@@ -39,103 +39,17 @@
     <hr>
     <label>Articles list</label>
     <ul class="resource-list">
-      <li class="active">
+      <li routerLinkActive="active" *ngFor="let article of articles">
         <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
         <div class="separator"></div>
         <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
+          <p>{{article.title}}</p>
+          <p>{{article.description}}</p>
         </div>
         <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
-        <ion-icon name="close-circle-sharp" class="button"></ion-icon>
-      </li>
-      <li>
-        <ion-icon name="image-sharp" style="width: 4.6rem; height: 4.6rem;"></ion-icon>
-        <div class="separator"></div>
-        <div class="main-content">
-          <p>Article Title</p>
-          <p>My description of the article</p>
-        </div>
-        <div class="separator" style="margin: 0 5px 0 5px;"></div>
-        <p style="margin: 0 1rem 0 1rem;">14 Jan 2023</p>
+        <p style="margin: 0 1rem 0 1rem;">{{article.publish_date.toLocaleDateString('it-IT', {
+          day: 'numeric', month: 'short', year: 'numeric'
+        })}}</p>
         <ion-icon name="close-circle-sharp" class="button"></ion-icon>
       </li>
     </ul>
